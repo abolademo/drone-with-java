@@ -6,3 +6,8 @@ steps:
   image: java:openjdk-8
   commands:
   - GRADLE_USER_HOME=~/.gradle ./gradlew test
+trigger:
+  branch:
+  - master
+  event:
+  - push
